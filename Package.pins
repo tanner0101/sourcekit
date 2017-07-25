@@ -1,0 +1,12 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "CSourceKit",
+      "reason": null,
+      "repositoryURL": "https://github.com/tanner0101/csourcekit.git",
+      "version": "0.1.0"
+    }
+  ],
+  "version": 1
+}
