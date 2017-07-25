@@ -104,7 +104,7 @@ public struct File {
         let value = sourcekitd_response_get_value(response!)
         let variant = Variant(value)!
 
-        print(variant.formatted())
+        // print(variant.formatted())
 
         let syntax = variant.parseSyntaxMap() ?? []
         let syntaxMap = SyntaxMap(contents, syntax)
