@@ -104,7 +104,7 @@ public struct File {
         let value = sourcekitd_response_get_value(response!)
         let variant = Variant(value)!
 
-        print(variant.formatted())
+        // print(variant.formatted())
 
         let syntax = variant.parseSyntaxMap() ?? []
         let syntaxMap = SyntaxMap(contents, syntax)
@@ -174,8 +174,8 @@ public struct Instance {
 public struct Comment {
     public var lines: [String]
 
-    public var attributes: [String: [String]] {
-        var attributes: [String: [String]] = [:]
+    public var attributes: [String: String] {
+        var attributes: [String: String] = [:]
 
         for line in lines {
             if line.trimmingCharacters(in: .whitespaces).hasPrefix("- ") {
@@ -187,10 +187,7 @@ public struct Comment {
                 }
 
                 let key = String(array[0]).trimmingCharacters(in: .whitespaces)
-                let values = array[1].split(
-                    separator: " ",
-                    omittingEmptySubsequences: true
-                ).map(String.init)
+                let values = String(array[1]).trimmingCharacters(in: .whitespaces)
 
                 attributes[key] = values
             }
