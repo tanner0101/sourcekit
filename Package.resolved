@@ -5,9 +5,9 @@
         "package": "CSourceKit",
         "repositoryURL": "/Users/tanner/dev/tanner0101/csourcekit",
         "state": {
-          "branch": null,
-          "revision": "1d3b0cf480e0b253a2d5c45eb76c28d98dd1e895",
-          "version": "0.1.0"
+          "branch": "master",
+          "revision": "38edd420234d758d7ce3db3eb3a87a0ab4360f1e",
+          "version": null
         }
       }
     ]
