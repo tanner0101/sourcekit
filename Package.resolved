@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CSourceKit",
+        "repositoryURL": "/Users/tanner/dev/tanner0101/csourcekit",
+        "state": {
+          "branch": null,
+          "revision": "1d3b0cf480e0b253a2d5c45eb76c28d98dd1e895",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

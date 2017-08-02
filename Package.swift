@@ -1,10 +1,16 @@
-// swift-tools-version:3.1
-
+// swift-tools-version:4.0
 import PackageDescription
 
 let package = Package(
     name: "SourceKit",
+    products: [
+        .library(name: "SourceKit", targets: ["SourceKit"]),
+    ],
     dependencies: [
-    	.Package(url: "https://github.com/tanner0101/csourcekit.git", majorVersion: 0)
+        .package(url: "../csourcekit", .branch("master")),
+    ],
+    targets: [
+        .target(name: "SourceKit"),
+        .testTarget(name: "SourceKitTests", dependencies: ["SourceKit"]),
     ]
 )
