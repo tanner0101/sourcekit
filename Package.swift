@@ -7,7 +7,7 @@ let package = Package(
         .library(name: "SourceKit", targets: ["SourceKit"]),
     ],
     dependencies: [
-        .package(url: "../csourcekit", .branch("master")),
+        .package(url: "https://github.com/tanner0101/csourcekit.git", from: "0.0.0"),
     ],
     targets: [
         .target(name: "SourceKit"),
