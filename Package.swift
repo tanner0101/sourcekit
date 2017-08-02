@@ -8,9 +8,10 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/tanner0101/csourcekit.git", from: "0.0.0"),
+        .package(url: "https://github.com/vapor/bits.git", from: "1.0.0"),
     ],
     targets: [
-        .target(name: "SourceKit"),
+        .target(name: "SourceKit", dependencies: ["Bits"]),
         .testTarget(name: "SourceKitTests", dependencies: ["SourceKit"]),
     ]
 )
